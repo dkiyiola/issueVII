@@ -1,0 +1,332 @@
+* {
+    margin:0px;
+    padding:0px,0px,0px,0px;
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    padding: 0px;
+    background-color:white;
+    color: #efe2d6;
+    font-size: 25px;
+  }
+  
+  
+  .sections0{
+    background-color:white;
+    padding-top: 50px;
+  }
+  
+  .dot {
+    height: 5px;
+    width: 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    float:right;
+  }
+
+  
+  /* Create four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 900px) {
+    .column  {
+      width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column  {
+      width: 100%;
+    }
+  }
+  
+  .column {
+    position: relative;
+    display: block;
+    flex: 1 1 0px;
+    transition: transform 500ms;
+  }
+  
+  .row .column:focus,
+  .row .column:hover {
+    transform: scale(1.5);
+    z-index: 1;
+  }
+
+  /* Add a background color to the top navigation */
+  .topnav {
+    background-color: #212360;
+    overflow: hidden;
+    padding:0px;
+  }
+  
+  /* Style the links inside the navigation bar */
+  
+  .topnav a{
+    float: left;
+    display: block;
+    color: #efe2d6;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 70px;
+    padding-bottom: 10px;
+  }
+  
+  
+  .logo, .icon {
+    padding-top: 10px;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    border-bottom:solid 6px #efe2d6;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+  
+  .icon:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+  
+  .logo:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+  
+  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+  @media screen and (max-width: 900px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+      margin-right: 40px;
+    }
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+      padding-top:50%;
+      padding-bottom: 50%;
+    }
+  }
+
+  
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+  
+  
+  }
+  
+  .tbutton {
+    color:#212360;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    font-variant: small-caps;
+    background: white;
+    padding:5px;
+    border-radius: 7px;
+  }
+  .cart{
+    flex:1;
+    justify-content: flex-end;
+    position: relative;
+  
+  }
+  
+  .sections0{
+    min-height:70vh;    
+  }
+  
+  .ilogo6 {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    margin:auto;
+    padding:40px;
+    padding-bottom: 5px;
+    padding-top:50px;
+  }
+  .sections0 h1{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #efe2d6; 
+    font-size: 3.5vw;
+    font-weight: 400;
+  }
+  
+  .article, .atitle, .abio h1 h3{
+    display: block;
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 57px;
+    font-variant: small-caps;
+  }
+  
+  .article, .atitle, h1 {
+    font-size: 57px;
+  }
+  
+  .article, .atitle, .abio, h3 {
+    font-size: 37px;
+    font-variant: all-small-caps;
+  }
+  /*
+  .abio h3{
+    color:#212360;
+  }
+  */
+  p, h6, h4, h5 {
+    display: block;
+    margin: auto;
+    width: 70%;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  h4 {
+  font-weight: 400;
+  }
+  
+  p {
+    font-size: 21px;
+    font-variant: normal;
+    font-weight: 400;
+  }
+  
+  h6 {
+    font-size: 14px;
+    text-align: left;
+    font-weight: 200;
+  }
+  
+  h1{
+  font-variant: small-caps;
+  }
+  
+  .content h4 {
+    text-align:left;
+    font-variant: normal;
+    font-size:14px;
+    line-height: 20px;
+  }
+  
+  .abio h5 {
+    font-size: 14px;
+    font-variant: normal;
+    text-align: left;
+  
+  }
+  
+  .abio h5 {
+  font-size: 14px;
+  font-variant: normal;
+  tex
+  
+  }
+  .cta{
+    padding:20px;
+    color:#212360;
+    background-color:white;
+    width: auto;
+    height: auto;
+    cursor:pointer;
+    font-size:30px;
+    border:none;
+    margin:auto;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 12px;
+    font-family: 'Raleway', sans-serif;
+    font-variant:all-small-caps;
+  
+  }
+  
+  .cta:hover{
+    background-color: #282c34;
+    color: white;    
+  
+  }
+  
+  @keyframes drop {
+    0%{
+        opacity: 0;
+        tranform: translateY(-10px);
+    }
+    100%{
+        opacity: 1;
+        tranform: translateY(0px);
+    }
+  }
+  
+  @media screen and (max-width:1024px) {
+    .presentation{
+        flex-direction: column;
+    }
+    .introduction{
+        margin-left: 5vh;
+        text-align:center;
+    }
+    .intro-text h1{
+        font-size:30px;
+    }
+    .intro-text p{
+        font-size: 18px;
+    }
+    .cta{
+        padding:10px 0px 0px 0px;
+    }
+  
+    .article{
+        padding-left: 30px;
+    }
+ 
+  
+    /*CONTENT PAGE
+  
+    .atitle {
+        box-sizing: content-box;
+        border:solid #efe2d6 2px;
+        width:100%;
+        background-color: #efe2d6;
+    }
+   
+   
+    }
+     */
+
+
