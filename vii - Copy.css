@@ -19,62 +19,53 @@
   }
 
   
-  /* Create four equal columns that floats next to each other */
-  .column {
-    float: left;
-    width: 33.3%;
-    padding: 10px;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
   .container{
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: baseline;
-    align-content: flex-start;
-  }
-
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 900px) {
-    .column  {
-      width: 50%;
-    }
+    width:90%;
+    margin:10px auto;
   }
   
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column  {
-      width: 100%;
-    }
-  }
-  
-  .column {
-    position: relative;
-    display: block;
-    flex: 1 1 0px;
-    transition: transform 500ms;
-    grid-template-columns: repeat(auto-fit, minmax(186px, 1fr));
-    background-color:black;
-  }
+.portfolio-menu{
+  text-align: center;
+}
 
+.portfolio-menu button{
+  display:inline-block;
+  margin:0;
+  list-style: none;
+  padding: 10px 15px;
+  border: 1px solid black;
+  cursor:pointer;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition:all .5s ease;
+}
 
-  .row{
-    background-color: black;
-  }
-  
-  .row .column:focus,
-  .row .column:hover {
-    transform: scale(1.1);
-    z-index: 1;
-  }
+.portfolio-menu button: hover {
+  background:#efe2d6;
+  color:black;
 
+}
+
+..grid-item {
+  width:100%
+}
+
+.grid-item {
+    border: 1px solid #efe2d6;
+
+}
+.grid-item.grid-item {
+  width:303px;
+  float:left;
+  margin-bottom: 10px;
+
+}
+
+li.active{
+  background:black;
+  color:#efe2d6;
+}
   /* Add a background color to the top navigation */
   .topnav {
     background-color: #000000;
