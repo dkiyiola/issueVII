@@ -57,7 +57,7 @@
     border:2px solid pink;
   }
 
-  .grid-item { width: 650px;  }
+  .grid-item { width: 600px;  }
   .grid-item{ height: 300px;}
   
   /* Use a media query to add a breakpoint at 800px: */
@@ -75,12 +75,10 @@
 }
   .visualart{
     height:900px;
-    width:650px;
+    width:600px;
   }
 
-  .spokenword{
-    width:1300px;
-  }
+
   /* Add a background color to the top navigation */
   .topnav {
     background-color: #000000;
