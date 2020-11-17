@@ -7,7 +7,7 @@
   
   body {
     padding: 0px;
-    background-color:white;
+    background-color:black;
     color: #efe2d6;
     font-size: 25px;
   }
@@ -16,56 +16,71 @@
   .sections0{
     background-color:#000000;
     padding-top: 0px;
+    width: 65%;
+    height:65%;
+    margin:auto;
+    padding-bottom:50px;
+  }
+
+  html {
+    overflow-y: scroll; 
+  }
+  
+  .grid {
+    background: black;
+    align-items:center;
+    padding-left:50px;
+  }
+  
+  /* clear fix */
+  .grid:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  
+  /* ---- .element-item ---- */
+  
+  /* 5 columns, percentage width */
+  .grid-item,
+  .grid-sizer {
+    width: 100%;
+  }
+  
+  .grid-item {
+    float: left;
+    text-decoration: none;
   }
 
   
-  .container{
-    width:90%;
-    margin:10px auto;
+  .grid-item{
+    border:2px solid pink;
   }
+
+  .grid-item { width: 650px;  }
+  .grid-item{ height: 300px;}
   
-.portfolio-menu{
-  text-align: center;
+  /* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 800px) {
+  .grid-item {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
 }
+  .visualart{
+    height:900px;
+    width:650px;
+  }
 
-.portfolio-menu button{
-  display:inline-block;
-  margin:0;
-  list-style: none;
-  padding: 10px 15px;
-  border: 1px solid black;
-  cursor:pointer;
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  -o-transition: all .5s ease;
-  transition:all .5s ease;
-}
-
-.portfolio-menu button: hover {
-  background:#efe2d6;
-  color:black;
-
-}
-
-..grid-item {
-  width:100%
-}
-
-.grid-item {
-    border: 1px solid #efe2d6;
-
-}
-.grid-item.grid-item {
-  width:303px;
-  float:left;
-  margin-bottom: 10px;
-
-}
-
-li.active{
-  background:black;
-  color:#efe2d6;
-}
+  .spokenword{
+    width:1300px;
+  }
   /* Add a background color to the top navigation */
   .topnav {
     background-color: #000000;
@@ -73,6 +88,9 @@ li.active{
     padding:0px;
   }
   
+  .prose{
+    text-decoration: none;
+  }
 
   /* Style the links inside the navigation bar */
   
@@ -139,7 +157,6 @@ li.active{
   }
 
   
-  
   body {
     font-family: 'Montserrat', sans-serif;
   
@@ -196,10 +213,11 @@ li.active{
   
   .article, .atitle, h1 {
     font-size: 40px;
+    font-weight: bold;
   }
 
   h2 {
-    font-size:30px;
+    font-size:25px;
   }
   
   .article, .atitle, .abio, h3 {
