@@ -4,15 +4,14 @@
     box-sizing: border-box;
   }
   
-  
   body {
     padding: 0px;
     background-color:black;
     color: #efe2d6;
     font-size: 25px;
   }
-  
-  
+
+  /* Issue Header*/
   .sections0{
     background-color:#000000;
     padding-top: 0px;
@@ -21,6 +20,13 @@
     margin:auto;
     padding-bottom:50px;
   }
+  /*credit for photography */
+  .artist{
+    margin:auto;
+  }
+  
+  /* grid layout 
+  ------------------------------------------------------------------------------====*/
 
   html {
     overflow-y: scroll; 
@@ -28,8 +34,8 @@
   
   .grid {
     background: black;
-    align-items:center;
-    padding-left:50px;
+    margin:2.5%;
+    border-bottom:3px solid green;
   }
   
   /* clear fix */
@@ -54,44 +60,61 @@
 
   
   .grid-item{
-    border:2px solid pink;
+    border-top:2px solid red;
+    border-bottom: 2px solid green;
+    border-left: 2px solid green;
+    border-right: 2px solid yellow;
   }
 
   .grid-item { width: 600px;  }
-  .grid-item{ height: 300px;}
+  .grid-item{ height: 300px; }
   
   /* Use a media query to add a breakpoint at 800px: */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   .grid-item {
     width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+   /margin:auto;
+  }
+  .visualart{
+    width:100%;
+    height:auto;
   }
 
+   .image{
+    width:100%;
+    height:auto;
+  } 
+}
+*/
   .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
   }
-}
+
   .visualart{
     height:900px;
     width:600px;
   }
 
+  .visualart{
+    height:auto;
+  }
+ .prose{
+    text-decoration: none;
+  }
+  /* external css: flickity.css *
 
-  /* Add a background color to the top navigation */
+/*------------------------------------------------------------------------------------------------------*/
+
+    /* Add a background color to the top navigation */
   .topnav {
     background-color: #000000;
     overflow: hidden;
     padding:0px;
-  }
-  
-  .prose{
-    text-decoration: none;
-  }
-
+  }  
   /* Style the links inside the navigation bar */
-  
   .topnav a{
     float: left;
     display: block;
@@ -144,17 +167,17 @@
       position: absolute;
       right: 0;
       top: 0;
-    
+    }
     .topnav.responsive a {
       float: none;
       display: block;
       text-align: left;
       padding-top:50%;
       padding-bottom: 50%;
-    }
   }
 
-  
+  /*--------------------------------------------------------------------------------------------------*/
+
   body {
     font-family: 'Montserrat', sans-serif;
   
@@ -333,8 +356,36 @@
     .article{
         padding-left: 30px;
     }
- 
+  }
+
+  h7 {
+    font-size: 14px;
+    text-align: center;
+    font-weight: 800;
+  }
+
+    
+  .artist{
+    margin-left:7%;
+    margin-top:2%;
+    margin-bottom:2%;
+    text-align:center;
+  }
+
   
+  footer {
+    text-align: center;
+    padding: 3px;
+    background-color:#212360;
+    margin-top:auto;
+    padding-bottom: 50px;
+  }
+
+  .footerInfo{
+    margin-top:-50px;
+  }
+
+
     /*CONTENT PAGE
   
     .atitle {

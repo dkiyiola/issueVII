@@ -8,6 +8,11 @@
  * low-level utility class for basic geometry
  */
 
+var flkty = new Flickity( '.main-gallery', {
+  // options
+  cellAlign: 'left',
+  contain: true
+});
 
 
 $('.grid').isotope({
