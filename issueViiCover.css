@@ -9,7 +9,95 @@
     background-color:black;
     color: #efe2d6;
     font-size: 25px;
+    font-family: 'Montserrat', sans-serif;  
   }
+
+  /*text*/
+  h1{
+    text-align: center;
+    font-size: 3.5vw;
+    font-weight: 400;
+  }
+  
+  h1 h3{
+    display: block;
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 57px;
+    font-variant: small-caps;
+  }
+  
+  .article, .atitle, h1 {
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size:25px;
+  }
+  
+  .article, .atitle, .abio, h3 {
+    font-size: 37px;
+    font-variant: all-small-caps;
+  }
+  /*
+  .abio h3{
+    color:#212360;
+  }
+  */
+  p, h6, h4, h5 {
+    display: block;
+    margin: auto;
+    width: 70%;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  h4 {
+  font-weight: 400;
+  }
+  
+  p {
+    font-size: 17px;
+    font-variant: normal;
+    font-weight: 400;
+  }
+  
+  h6 {
+    font-size: 14px;
+    text-align: left;
+    font-weight: 200;
+  }
+  
+  h1{
+  font-variant: small-caps;
+  }
+  
+  .content h4 {
+    text-align:left;
+    font-variant: normal;
+    font-size:14px;
+    line-height: 20px;
+  }
+  
+  h5 {
+    font-size: 14px;
+    font-variant: normal;
+    text-align: left;
+    font-weight:200px;
+  
+  }
+  
+
+  h8{
+    font-size: 107px;
+    font-weight: 800px;
+    font-variant:small-caps;
+  }
+
 
   /* Issue Header*/
   .sections0{
@@ -213,116 +301,7 @@
     padding-bottom: 5px;
     padding-top:50px;
   }
-  .sections0 h1{
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    color: #efe2d6; 
-    font-size: 3.5vw;
-    font-weight: 400;
-  }
-  
-  .article, .atitle, .abio h1 h3{
-    display: block;
-    margin: auto;
-    width: 90%;
-    padding: 10px;
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
-    font-size: 57px;
-    font-variant: small-caps;
-  }
-  
-  .article, .atitle, h1 {
-    font-size: 40px;
-    font-weight: bold;
-  }
 
-  h2 {
-    font-size:25px;
-  }
-  
-  .article, .atitle, .abio, h3 {
-    font-size: 37px;
-    font-variant: all-small-caps;
-  }
-  /*
-  .abio h3{
-    color:#212360;
-  }
-  */
-  p, h6, h4, h5 {
-    display: block;
-    margin: auto;
-    width: 70%;
-    padding: 10px;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-  }
-  
-  h4 {
-  font-weight: 400;
-  }
-  
-  p {
-    font-size: 17px;
-    font-variant: normal;
-    font-weight: 400;
-  }
-  
-  h6 {
-    font-size: 14px;
-    text-align: left;
-    font-weight: 200;
-  }
-  
-  h1{
-  font-variant: small-caps;
-  }
-  
-  .content h4 {
-    text-align:left;
-    font-variant: normal;
-    font-size:14px;
-    line-height: 20px;
-  }
-  
-  .abio h5 {
-    font-size: 14px;
-    font-variant: normal;
-    text-align: left;
-  
-  }
-  
-  .abio h5 {
-  font-size: 14px;
-  font-variant: normal;
-  tex
-  
-  }
-  .cta{
-    padding:20px;
-    color:#212360;
-    background-color:white;
-    width: auto;
-    height: auto;
-    cursor:pointer;
-    font-size:30px;
-    border:none;
-    margin:auto;
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 12px;
-    font-family: 'Raleway', sans-serif;
-    font-variant:all-small-caps;
-  
-  }
-  
-  .cta:hover{
-    background-color: #282c34;
-    color: white;    
-  
-  }
   
   @keyframes drop {
     0%{
@@ -386,17 +365,29 @@
   }
 
 
-    /*CONTENT PAGE
-  
-    .atitle {
-        box-sizing: content-box;
-        border:solid #efe2d6 2px;
-        width:100%;
-        background-color: #efe2d6;
-    }
-   
-   
-    }
-     */
+    /*CONTENT PAGE------------------------------------------------------------------------*/
 
+    .issue{
+      text-align:center;
+      padding: 80px;
+      padding-bottom:150px;
+    }
 
+    .heading{
+      text-align: center;
+      padding-top:70px;
+    }
+
+    .authorInfo{
+      text-align:center;
+      padding-top:70px;
+      padding-bottom:120px;
+    }
+
+    .content {
+      display:flex; justify-content: center;
+    }
+
+    hr{
+      border: 2px solid #efe2d6 ;
+    }
